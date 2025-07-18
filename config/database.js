@@ -1,8 +1,9 @@
 // const mong = require("mongoose");
 import mong from "mongoose";
-
+import dotenv from "dotenv";
+dotenv.config();
 const connectDb = ()=>{
-mong.connect('mongodb://127.0.0.1:27017/contact-curd') 
+mong.connect(process.env.MONGO_URL) 
 .then(() => console.log("MongoDB Connected..."));
 
 }

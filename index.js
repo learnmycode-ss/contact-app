@@ -1,11 +1,12 @@
 // const express = require('express');
 import express from "express";
+import ContactRoute from './routes/contacts.js';
+
 const app = express();
 
-// model import
-import ContactRoute from './routes/contacts.js';
 // connect mongo
 import  connectDb  from './config/database.js';
+const PORT = process.env.PORT || 5000;
 
 connectDb();
 
@@ -19,6 +20,6 @@ app.use(express.static('public')); //this middleware to static folder enable in 
 
 app.use("/",ContactRoute);
 
-app.listen(4000,()=>{
-    console.log('Server is running on http://localhost:4000');
+app.listen(PORT,()=>{
+    console.log('Server is running on http://localhost:'+PORT);
 })

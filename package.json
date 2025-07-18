@@ -5,12 +5,13 @@
   "license": "ISC",
   "author": "",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "test": "nodemon index.js",
     "start": "nodemon index.js"
   },
   "dependencies": {
+    "dotenv": "^17.2.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "expressjs": "^1.0.1",
