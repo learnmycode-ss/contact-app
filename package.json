@@ -4,8 +4,8 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
   "main": "index.js",
+  "type" : "module",
   "scripts": {
     "test": "nodemon index.js",
     "start": "nodemon index.js"

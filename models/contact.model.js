@@ -1,4 +1,5 @@
-const mong = require("mongoose");
+// const mong = require("mongoose");
+import mong from 'mongoose';
 
 const contactSchemas = mong.Schema({
     first_name: {
@@ -19,4 +20,5 @@ const contactSchemas = mong.Schema({
 })
 
 const contact = mong.model("Contact",contactSchemas);
-module.exports = contact;
+// module.exports = contact;
+export default contact;

@@ -50,9 +50,10 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <% let srno = 1%>
                     <%d.forEach((i)=>{%>
                     <tr>
-                      <td><%=i._id%></td>
+                      <td><%#i._id%><%=srno++%></td>
                       <td><%=i.first_name%></td>
                       <td><%=i.last_name%></td>
                       <td><%=i.email%></td>
