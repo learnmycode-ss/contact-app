@@ -1,9 +1,9 @@
 // const express = require('express');
 import express from "express";
+import ContactRoute from './routes/contacts.js';
+
 const app = express();
 
-// model import
-import ContactRoute from './routes/contacts.js';
 // connect mongo
 import  connectDb  from './config/database.js';
 
